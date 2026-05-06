@@ -32,13 +32,13 @@ public class UserService {
             User agent = new User();
             agent.setUsername("hamouda");
             agent.setEmail("hamouda.elamrani@o2medical.com");
-            agent.setPasswordHash(passwordEncoder.encode("hamouda123")); // Encrypted: hamouda123
+            agent.setPasswordHash(passwordEncoder.encode("hamouda123"));
             agent.setFirstName("Hamouda");
             agent.setLastName("El Amrani");
             agent.setRole(UserRole.AGENT);
             agent.setIsActive(true);
             userRepository.save(agent);
-            System.out.println("✓ Created user: hamouda (password: hamouda123)");
+            System.out.println("✓ Created user: hamouda");
         }
 
         // Check if Ahmed Berrada already exists
@@ -46,13 +46,13 @@ public class UserService {
             User doctor = new User();
             doctor.setUsername("ahmed");
             doctor.setEmail("ahmed.berrada@o2medical.com");
-            doctor.setPasswordHash(passwordEncoder.encode("ahmed123")); // Encrypted: ahmed123
+            doctor.setPasswordHash(passwordEncoder.encode("ahmed123"));
             doctor.setFirstName("Ahmed");
             doctor.setLastName("Berrada");
             doctor.setRole(UserRole.DOCTOR);
             doctor.setIsActive(true);
             userRepository.save(doctor);
-            System.out.println("✓ Created user: ahmed (password: ahmed123)");
+            System.out.println("✓ Created user: ahmed");
         }
     }
 

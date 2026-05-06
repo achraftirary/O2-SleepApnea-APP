@@ -126,10 +126,10 @@ The frontend should be available at `http://localhost:3000`.
 
 The app seeds two internal users in the database:
 
-- Agent: `hamouda` / `hamouda123`
-- Doctor: `ahmed` / `ahmed123`
+- Agent: `hamouda`
+- Doctor: `ahmed`
 
-Authentication is database-backed and password hashes are stored with BCrypt. There is no public registration flow.
+Authentication is database-backed and password hashes are stored with BCrypt. There is no public registration flow. The initial passwords are defined in the backend seed logic and should be changed before any real deployment.
 
 ## Main User Flows
 
